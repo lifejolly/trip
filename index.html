@@ -1,0 +1,66 @@
+﻿<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Trip 旅行攻略 | 中国热门景点</title>
+  <meta name="description" content="中国10大热门旅行景点攻略：门票、交通、路线、预算、避坑建议一站式查看。">
+  <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body data-page="home">
+  <header class="site-header">
+    <div class="container nav">
+      <a class="logo" href="index.html">Trip<span>旅行</span></a>
+      <nav class="nav-links">
+        <a class="active" href="index.html">首页</a>
+        <a href="destinations.html">景点攻略</a>
+        <a href="favorites.html">我的收藏</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="hero">
+      <div class="hero-grid">
+        <article class="hero-card">
+          <h1>中国 10 大热门景点<br>详细旅行攻略</h1>
+          <p>覆盖最佳季节、到达方式、门票预约、1-3日路线、住宿美食、预算与避坑指南，帮你更快完成行程决策。</p>
+        </article>
+        <aside class="hero-side">
+          <strong>快速搜索目的地</strong>
+          <div class="search-box">
+            <input id="globalSearch" type="search" placeholder="输入景点名，如：九寨沟">
+            <a class="btn" href="destinations.html">进入列表</a>
+          </div>
+          <p class="meta">支持按景点名/城市/关键词检索</p>
+          <ul id="seasonalTips" class="meta"></ul>
+        </aside>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="section-title">
+        <h2>热门景点</h2>
+        <a class="btn secondary" href="destinations.html">查看全部</a>
+      </div>
+      <div id="hotCards" class="grid cards"></div>
+    </section>
+
+    <section class="section">
+      <div class="section-title"><h2>出行准备清单</h2></div>
+      <div class="row">
+        <article class="info-panel"><strong>避坑清单</strong><p>提前预约、错峰入园、保留购票凭证、谨慎低价团。</p></article>
+        <article class="info-panel"><strong>预算模板</strong><p>交通 + 门票 + 住宿 + 餐饮 + 机动预算（建议10%-15%）。</p></article>
+        <article class="info-panel"><strong>行李建议</strong><p>身份证件、充电设备、常备药、轻便雨具、防晒保暖用品。</p></article>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer container">
+    <p>Trip旅行攻略 | 版权信息 | 隐私政策 | 联系方式</p>
+  </footer>
+
+  <script src="assets/data/destinations.js"></script>
+  <script src="assets/js/app.js"></script>
+</body>
+</html>

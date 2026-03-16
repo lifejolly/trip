@@ -1,0 +1,71 @@
+﻿<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>景点攻略列表 | Trip</title>
+  <meta name="description" content="按地区、季节、人群筛选中国热门景点攻略，并按热度、评分和更新时间排序。">
+  <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body data-page="destinations">
+  <header class="site-header">
+    <div class="container nav">
+      <a class="logo" href="index.html">Trip<span>旅行</span></a>
+      <nav class="nav-links">
+        <a href="index.html">首页</a>
+        <a class="active" href="destinations.html">景点攻略</a>
+        <a href="favorites.html">我的收藏</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container section">
+    <div class="section-title">
+      <h1>中国热门景点攻略列表</h1>
+    </div>
+
+    <section class="filter-bar">
+      <input id="searchInput" type="search" placeholder="搜索景点、城市或关键词">
+      <select id="areaSelect">
+        <option value="">全部地区</option>
+        <option value="华北">华北</option>
+        <option value="华东">华东</option>
+        <option value="华中">华中</option>
+        <option value="华南">华南</option>
+        <option value="西南">西南</option>
+        <option value="西北">西北</option>
+      </select>
+      <select id="seasonSelect">
+        <option value="">全部季节</option>
+        <option value="春">春季优先</option>
+        <option value="夏">夏季优先</option>
+        <option value="秋">秋季优先</option>
+        <option value="冬">冬季优先</option>
+        <option value="四季">四季皆宜</option>
+      </select>
+      <select id="crowdSelect">
+        <option value="">全部人群</option>
+        <option value="亲子">亲子</option>
+        <option value="情侣">情侣</option>
+        <option value="摄影">摄影</option>
+        <option value="徒步">徒步</option>
+        <option value="历史文化">历史文化</option>
+      </select>
+      <select id="sortSelect">
+        <option value="hot">按热度</option>
+        <option value="rating">按评分</option>
+        <option value="update">按最近更新</option>
+      </select>
+    </section>
+
+    <section id="listCards" class="grid cards"></section>
+  </main>
+
+  <footer class="site-footer container">
+    <p>Trip旅行攻略 | 数据仅供行前参考，请以官方公告为准。</p>
+  </footer>
+
+  <script src="assets/data/destinations.js"></script>
+  <script src="assets/js/app.js"></script>
+</body>
+</html>
