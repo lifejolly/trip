@@ -12,10 +12,10 @@ if errorlevel 1 (
 )
 
 echo Starting Trip website...
-echo URL: http://localhost:8080
+echo URL: http://localhost:8081
 echo Press Ctrl+C to stop the server.
 echo.
 
-python -m http.server 8080
+python -m http.server 8081
 
 endlocal
